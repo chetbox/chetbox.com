@@ -7,8 +7,12 @@
     <meta name="keywords" content="entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering">
     <meta name="author" content="Chetan Padia">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
       body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
         height: 100vh;
         width: 100vw;
         margin: 0;
@@ -25,14 +29,19 @@
       }
       header > img {
         position: absolute;
+        top: 4px;
         left: 0;
         margin: 1em;
         width: 80px;
         height: 80px;
         border-radius: 40px;
       }
+      header p {
+        color: #555;
+      }
       h1 {
         margin-bottom: 0.25em;
+        color: #333;
       }
       h1::before {
         display: inline-block;
@@ -52,6 +61,13 @@
       nav {
         margin: 1em;
       }
+      nav a {
+        text-decoration: none;
+        color: #aaa;
+        display: inline-block;
+        margin: 0 0.5em;
+        font-size: 20px;
+      }
     </style>
   </head>
   <body>
@@ -62,10 +78,18 @@
     </header>
     <footer>
       <nav>
-        <a href="https://twitter.com/chetbox" title="@chetbox">Twitter</a>
-        <a href="https://medium.com/@chetbox" title="medium.com/@chetbox">Medium</a>
-        <a href="https://www.linkedin.com/in/chetbox" title="linkedin.com/in/chetbox">HTML</a>
-        <a href="https://github.com/chetbox" title="github.com/chetbox">GitHub</a>
+        <a href="https://twitter.com/chetbox" title="Twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="https://medium.com/@chetbox" title="Medium">
+          <i class="fa fa-medium" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/chetbox" title="GitHub">
+          <i class="fa fa-github-alt" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
       </nav>
     </footer>
   </body>
