@@ -6,17 +6,60 @@
     <meta name="description" content="Chetan Padia - engineer, entrepreneur, hacker, curious human">
     <meta name="keywords" content="entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering">
     <meta name="author" content="Chetan Padia">
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+      header {
+        display: table;
+        position: relative;
+        padding-left: 140px;
+      }
+      header > img {
+        position: absolute;
+        left: 0;
+        margin: 1em;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+      h1::before {
+        display: inline-block;
+        background: url('chet.jpg') 1em 1em no-repeat center;
+        width: 1em;
+        height: 1em;
+      }
+      footer {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+      }
+      nav {
+        margin: 1em;
+      }
+    </style>
   </head>
   <body>
     <header>
+      <img src="chet.jpg" alt="@chetbox">
       <h1>Chetan Padia</h1>
-      <p>engineer, entrepreneur, hacker, curious human</p>
+      <p>engineer · entrepreneur · hacker · curious human</p>
     </header>
-    <nav>
-      <a href="https://twitter.com/chetbox" title="@chetbox">Twitter</a>
-      <a href="https://medium.com/@chetbox" title="medium.com/@chetbox">Medium</a>
-      <a href="https://www.linkedin.com/in/chetbox" title="linkedin.com/in/chetbox">HTML</a>
-      <a href="https://github.com/chetbox" title="github.com/chetbox">GitHub</a>
-    </nav>
+    <footer>
+      <nav>
+        <a href="https://twitter.com/chetbox" title="@chetbox">Twitter</a>
+        <a href="https://medium.com/@chetbox" title="medium.com/@chetbox">Medium</a>
+        <a href="https://www.linkedin.com/in/chetbox" title="linkedin.com/in/chetbox">HTML</a>
+        <a href="https://github.com/chetbox" title="github.com/chetbox">GitHub</a>
+      </nav>
+    </footer>
   </body>
 </html>
