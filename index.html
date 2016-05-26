@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chetan Padia</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Chetan Padia</title>
     <meta name="description" content="Chetan Padia - engineer, entrepreneur, hacker, curious human">
     <meta name="keywords" content="entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering">
     <meta name="author" content="Chetan Padia">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,100" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
+      html, body {
+        overflow: hidden;
+      }
       body {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
@@ -23,34 +26,37 @@
         flex-direction: column;
       }
       header {
-        display: table;
         position: relative;
-        padding-left: 120px;
+        width: 0;
+        height: 0;
+      }
+      header > * {
+        position: absolute;
       }
       header > img {
-        position: absolute;
-        top: 4px;
-        left: 0;
-        margin: 1em;
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
+        bottom: -90px;
+        right: 50px;
+        margin: 30px;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        transition: bottom 1s ease, right 1s ease;
       }
-      header p {
-        color: #555;
+      header > h1, header > p {
+        left: -50px;
+        white-space: nowrap;
+        transition: left 1s ease, top 1s ease;
       }
-      h1 {
-        margin-bottom: 0.25em;
+      header > h1 {
+        margin: 0.25em 0;
         color: #333;
-      }
-      h1::before {
-        display: inline-block;
-        background: url('chet.jpg') 1em 1em no-repeat center;
-        width: 1em;
-        height: 1em;
+        bottom: 0;
       }
       header > p {
+        color: #555;
+        font-weight: 100;
         margin: 0;
+        width: 30em;
       }
       footer {
         flex-basis: 50%;
@@ -67,6 +73,25 @@
         display: inline-block;
         margin: 0 0.5em;
         font-size: 20px;
+        transition: color 200ms ease;
+      }
+      nav a:hover {
+        color: #777;
+      }
+
+      @media screen and (max-width: 567px) {
+        header > img {
+          bottom: 0;
+          right: -90px;
+        }
+        header > h1 {
+          top: 0;
+          left: -2.8em;
+        }
+        header > p {
+          top: 3.5em;
+          left: -9.7em;
+        }
       }
     </style>
   </head>
