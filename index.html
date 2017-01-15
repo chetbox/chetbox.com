@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
     <title>Chetan Padia</title>
     <head profile="http://www.w3.org/2005/10/profile">
-    <link rel="icon" type="image/jpeg" href="chet.jpg">
+    <link rel="icon" type="image/jpeg" href="images/chet.jpg">
     <meta name="description" content="Chetan Padia - engineer, entrepreneur, hacker, curious human">
     <meta name="keywords" content="entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering">
     <meta name="author" content="Chetan Padia">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,100" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
-      html, body {
-        overflow: hidden;
-      }
       body {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
@@ -23,58 +20,50 @@
         width: 100vw;
         margin: 0;
         padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-direction: column;
       }
       header {
-        position: relative;
-        width: 0;
-        height: 0;
-      }
-      header > * {
-        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
       }
       header > img {
-        bottom: -90px;
-        right: 50px;
         margin: 30px;
         width: 120px;
         height: 120px;
         border-radius: 60px;
-        transition: bottom 1s ease, right 1s ease;
       }
-      header > h1, header > p {
-        left: -50px;
-        white-space: nowrap;
-        transition: left 1s ease, top 1s ease;
-      }
-      header > h1 {
+      header h1 {
+        font-weight: 100;
         margin: 0.25em 0;
         color: #333;
         bottom: 0;
       }
-      header > p {
+      header .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      header .info > * {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      header p {
         color: #555;
         font-weight: 100;
-        margin: 0;
-        width: 30em;
-      }
-      footer {
-        flex-basis: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
+        margin-top: 0;
+        margin-bottom: 0;
       }
       nav {
-        margin: 1em;
+        margin: 1em 0;
       }
       nav a {
         text-decoration: none;
         color: #aaa;
         display: inline-block;
-        margin: 0 0.5em;
+        margin: 0 1em 0 0;
         font-size: 20px;
         transition: color 200ms ease;
       }
@@ -82,51 +71,202 @@
         color: #777;
       }
 
+      #content {
+        margin: 32px auto 0 auto;
+      }
+
       i.fa-instagram {
         font-weight: 600;
       }
 
-      @media screen and (max-width: 567px) {
-        header > img {
-          bottom: 0;
-          right: -90px;
+      #projects {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      #projects h3 {
+        font-weight: 100;
+        margin: 0;
+      }
+
+      #projects > li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 72px;
+        box-sizing: border-box;
+        background-color: #aaa;
+        color: #eee;
+        padding-left: 72px;
+        background-size: 72px;
+        background-position: left;
+        background-repeat: no-repeat;
+        box-shadow: 0 1px 3px #ccc;
+        background-image: url('images/translucent.png');
+      }
+
+      #projects > li .description {
+        font-size: 0.8em;
+      }
+
+      #projects .beeline {
+        background-image: url('images/beeline.jpg');
+        background-color: #FF9800;
+      }
+
+      #projects .emojikey {
+        background-image: url('images/emojikey.png');
+        background-color: #0288D1;
+      }
+
+      #projects .boopjs {
+        background-image: url('images/boopjs.png');
+        background-color: #673AB7;
+      }
+
+      #projects .minishift-tetris {
+        background-image: url('images/minishift-tetris.jpg');
+        background-color: #8BC34A;
+      }
+
+      #projects .double {
+        background-image: url('images/double.jpg');
+        background-color: #E36952;
+      }
+
+      #projects .sk-innovation {
+        background-image: url('images/sk-innovation.png');
+        background-color: #4CAF50;
+      }
+
+      #projects .sk-ios {
+        background-image: url('images/sk-ios.png');
+        background-color: #009688;
+      }
+
+      #projects .bb10 {
+        background-image: url('images/bb10.jpg');
+        background-color: #616161;
+      }
+
+      #projects .sk-android {
+        background-image: url('images/sk-android.png');
+        background-color: #0097A7;
+      }
+
+      #projects .livingmap {
+        background-image: url('images/livingmap.png');
+        background-color: #413c6b;
+      }
+
+      #projects .iapprove {
+        background-image: url('images/iapprove.png');
+        background-color: #3F51B5;
+      }
+
+      #projects a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      #projects > li > * {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      /* large screens */
+      @media screen and (min-width: 567px) {
+        header {
+          flex-direction: row;
+          margin-top: 4em;
+          margin-bottom: 4em;
         }
-        header > h1 {
-          top: 0;
-          left: -2.8em;
+        header .info {
+          align-items: flex-start;
         }
-        header > p {
-          top: 3.5em;
-          left: -9.7em;
+        #content {
+          max-width: 500px;
+          margin-top: 4em;
+          margin-bottom: 4em;
         }
       }
     </style>
   </head>
   <body>
     <header>
-      <img src="chet.jpg" alt="@chetbox">
-      <h1>Chetan Padia</h1>
-      <p>engineer · entrepreneur · hacker · curious human</p>
+      <img src="images/chet.jpg" alt="@chetbox">
+      <div class="info">
+        <h1>Chetan Padia</h1>
+        <p>engineer · entrepreneur · hacker · curious human</p>
+        <nav>
+          <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/chetbox" title="GitHub">
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a href="https://medium.com/@chetbox" title="Medium">
+            <i class="fa fa-medium" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/chetbox" title="Twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/chetbox/" title="Instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </nav>
+      </div>
     </header>
-    <footer>
-      <nav>
-        <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="https://medium.com/@chetbox" title="Medium">
-          <i class="fa fa-medium" aria-hidden="true"></i>
-        </a>
-        <a href="https://twitter.com/chetbox" title="Twitter">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/chetbox" title="GitHub">
-          <i class="fa fa-github-alt" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/chetbox/" title="Instagram">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-      </nav>
-    </footer>
+    <div id="content">
+      <ol id="projects">
+        <li class="beeline">
+          <h3><a class="org" href="https://beeline.co" target="_blank">Beeline</a></h3>
+          <span class="description">Simpler navigation for bicycles</span>
+        </li>
+        <li class="emojikey">
+          <h3><a class="org" href="https://chrome.google.com/webstore/detail/emojikey-search-and-type/lnpnkhpkllalfpmkkjmckcmdbncgbdke" target="_blank">Emojikey</a></h3>
+          <span class="description">Search and type emojis</span>
+        </li>
+        <li class="boopjs">
+          <h3><a class="org" href="https://boopjs.com" target="_blank">boop.js</a></h3>
+          <span class="description">UI test automation for Android apps</span>
+        </li>
+        <li class="minishift-tetris">
+          <h3><a class="org" href="https://github.com/chetbox/minishift-tetris" target="_blank">Minishift Tetris</a></h3>
+          <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
+        </li>
+        <li class="double">
+          <h3><a class="org" href="http://www.joindouble.com/" target="_blank">Double</a></h3>
+          <span class="description">Safer, less awkward dating</span>
+        </li>
+        <li class="livingmap">
+          <h3><a class="org" href="https://livingmap.com/" target="_blank">Living Map</a></h3>
+          <span class="description">Smart maps for mobile devices</span>
+        </li>
+        <li class="sk sk-innovation">
+          <h3><a class="org" href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/" target="_blank">SwiftKey innovation days</a></h3>
+          <span class="description">Encouraging a creative culture at SwiftKey</span>
+        </li>
+        <li class="sk sk-ios">
+          <h3><a class="org" href="https://swiftkey.com/en/keyboard/ios" target="_blank">SwiftKey iOS</a></h3>
+          <span class="description">Faster, more accurate typing on iOS</span>
+        </li>
+        <li class="sk bb10">
+          <h3><a class="org" href="https://developer.blackberry.com/design/bb10/keyboards.html" target="_blank">BlackBerry 10 keyboard</a></h3>
+          <span class="description">A new touchscreen typing experience</span>
+        </li>
+        <li class="sk sk-android">
+          <h3><a class="org" href="https://swiftkey.com/en" target="_blank">SwiftKey</a></h3>
+          <span class="description">The keyboard powered by you</span>
+        </li>
+        <li class="iapprove">
+          <h3><a class="org" href="https://github.com/chetbox/iApprove" target="_blank">iApprove</a></h3>
+          <span class="description">Audience participation for presentations</span>
+        </li>
+      </ol>
+    </div>
   </body>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
