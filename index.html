@@ -90,7 +90,7 @@
         margin: 0;
       }
 
-      #projects > li {
+      #projects > li > a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -99,7 +99,8 @@
         box-sizing: border-box;
         background-color: #aaa;
         color: #eee;
-        padding-left: 72px;
+        margin: 0;
+        padding-left: 88px;
         background-size: 72px;
         background-position: left;
         background-repeat: no-repeat;
@@ -143,7 +144,7 @@
 
       #projects .sk-ios {
         background-image: url('images/sk-ios.png');
-        background-color: #009688;
+        background-color: #00BCD4;
       }
 
       #projects .bb10 {
@@ -221,49 +222,71 @@
     </header>
     <div id="content">
       <ol id="projects">
-        <li class="beeline">
-          <h3><a class="org" href="https://beeline.co" target="_blank">Beeline</a></h3>
-          <span class="description">Simpler navigation for bicycles</span>
+        <li>
+          <a class="beeline" href="https://beeline.co" target="_blank">
+            <h3>Beeline</h3>
+            <span class="description">Simpler navigation for bicycles</span>
+          </a>
         </li>
-        <li class="emojikey">
-          <h3><a class="org" href="https://chrome.google.com/webstore/detail/emojikey-search-and-type/lnpnkhpkllalfpmkkjmckcmdbncgbdke" target="_blank">Emojikey</a></h3>
-          <span class="description">Search and type emojis</span>
+        <li>
+          <a class="emojikey" href="https://chrome.google.com/webstore/detail/emojikey-search-and-type/lnpnkhpkllalfpmkkjmckcmdbncgbdke" target="_blank">
+            <h3>Emojikey</h3>
+            <span class="description">Search and type emojis</span>
+          </a>
         </li>
-        <li class="boopjs">
-          <h3><a class="org" href="https://boopjs.com" target="_blank">boop.js</a></h3>
-          <span class="description">UI test automation for Android apps</span>
+        <li>
+          <a class="boopjs" href="https://boopjs.com" target="_blank">
+            <h3>boop.js</h3>
+            <span class="description">UI test automation for Android apps</span>
+          </a>
         </li>
-        <li class="minishift-tetris">
-          <h3><a class="org" href="https://github.com/chetbox/minishift-tetris" target="_blank">Minishift Tetris</a></h3>
-          <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
+        <li>
+          <a class="minishift-tetris" href="https://github.com/chetbox/minishift-tetris" target="_blank">
+            <h3>Minishift Tetris</h3>
+            <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
+          </a>
         </li>
-        <li class="double">
-          <h3><a class="org" href="http://www.joindouble.com/" target="_blank">Double</a></h3>
-          <span class="description">Safer, less awkward dating</span>
+        <li>
+          <a class="double" href="http://www.joindouble.com/" target="_blank">
+            <h3>Double</h3>
+            <span class="description">Safer, less awkward dating</span>
+          </a>
         </li>
-        <li class="livingmap">
-          <h3><a class="org" href="https://livingmap.com/" target="_blank">Living Map</a></h3>
-          <span class="description">Smart maps for mobile devices</span>
+        <li>
+          <a class="livingmap" href="https://livingmap.com/" target="_blank">
+            <h3>Living Map</h3>
+            <span class="description">Smart maps for mobile devices</span>
+          </a>
         </li>
-        <li class="sk sk-innovation">
-          <h3><a class="org" href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/" target="_blank">SwiftKey innovation days</a></h3>
-          <span class="description">Fostering creative culture at SwiftKey</span>
+        <li>
+          <a class="sk sk-innovation" href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/" target="_blank">
+            <h3>SwiftKey innovation days</h3>
+            <span class="description">Fostering creative culture at SwiftKey</span>
+          </a>
         </li>
-        <li class="sk sk-ios">
-          <h3><a class="org" href="https://swiftkey.com/en/keyboard/ios" target="_blank">SwiftKey iOS</a></h3>
-          <span class="description">Faster, more accurate typing on iOS</span>
+        <li>
+          <a class="sk sk-ios" href="https://swiftkey.com/en/keyboard/ios" target="_blank">
+            <h3>SwiftKey iOS</h3>
+            <span class="description">Faster, more accurate typing on iOS</span>
+          </a>
         </li>
-        <li class="sk bb10">
-          <h3><a class="org" href="https://developer.blackberry.com/design/bb10/keyboards.html" target="_blank">BlackBerry 10 keyboard</a></h3>
-          <span class="description">A new touchscreen typing experience</span>
+        <li>
+          <a class="sk bb10" href="https://developer.blackberry.com/design/bb10/keyboards.html" target="_blank">
+            <h3>BlackBerry 10 keyboard</h3>
+            <span class="description">A new touchscreen typing experience</span>
+          </a>
         </li>
-        <li class="sk sk-android">
-          <h3><a class="org" href="https://swiftkey.com/en" target="_blank">SwiftKey</a></h3>
-          <span class="description">The keyboard powered by you</span>
+        <li>
+          <a class="sk sk-android" href="https://swiftkey.com/en" target="_blank">
+            <h3>SwiftKey</h3>
+            <span class="description">The keyboard powered by you</span>
+          </a>
         </li>
-        <li class="iapprove">
-          <h3><a class="org" href="https://github.com/chetbox/iApprove" target="_blank">iApprove</a></h3>
-          <span class="description">Audience participation for presentations</span>
+        <li>
+          <a class="sk iapprove" href="https://github.com/chetbox/iApprove" target="_blank">
+            <h3>iApprove</h3>
+            <span class="description">Audience participation for presentations</span>
+          </a>
         </li>
       </ol>
     </div>
