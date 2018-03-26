@@ -21,6 +21,30 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,100" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
+      h1, h2, h3, h4 {
+        font-weight: 100;
+        margin: 0;
+        bottom: 0;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1em;
+        line-height: 1.2em;
+      }
+      h3 {
+        font-size: 1.1em;
+        line-height: 1.1em;
+        color: #999;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        text-align: center;
+      }
+      h4 {
+        font-size: 1.1em;
+        line-height: 1em;
+      }
       body {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
@@ -36,20 +60,18 @@
         flex-direction: column;
         justify-content: center;
       }
+      header *, .projects * {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+      }
       header > img {
         margin: 30px;
         width: 120px;
         height: 120px;
         border-radius: 60px;
       }
-      header h1, h2 {
-        font-weight: 100;
-        margin: 0;
+      header h1, header h2, header h3, header h4 {
         color: #333;
-        bottom: 0;
-      }
-      header h2 {
-        font-size: 1em;
       }
       header .info {
         display: flex;
@@ -66,7 +88,7 @@
         color: #555;
         font-weight: 100;
         margin-bottom: 0;
-        margin-top: 0.5em;
+        margin-top: 1em;
         text-align: left;
         max-width: 80vw;
       }
@@ -93,26 +115,22 @@
         color: #777;
       }
 
-      #content {
-        margin: 32px auto 0 auto;
-      }
-
       i.fa-instagram {
         font-weight: 600;
       }
 
-      #projects {
+      .projects {
         list-style: none;
         padding-left: 0;
         margin: 0;
       }
 
-      #projects h3 {
+      .projects h3 {
         font-weight: 100;
         margin: 0;
       }
 
-      #projects > li > a {
+      .projects > li > a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -120,7 +138,7 @@
         height: 72px;
         box-sizing: border-box;
         background-color: #aaa;
-        color: #eee;
+        color: #fff;
         margin: 0;
         padding-left: 88px;
         background-size: 72px;
@@ -130,71 +148,71 @@
         background-image: url('images/translucent.png');
       }
 
-      #projects > li .description {
+      .projects > li .description {
         font-size: 0.8em;
       }
 
-      #projects .beeline {
+      .projects .beeline {
         background-image: url('images/beeline.jpg');
         background-color: #f2a430;
       }
 
-      #projects .emojikey {
+      .projects .emojikey {
         background-image: url('images/emojikey.png');
         background-color: #0288D1;
       }
 
-      #projects .boopjs {
+      .projects .boopjs {
         background-image: url('images/boopjs.png');
         background-color: #673AB7;
       }
 
-      #projects .minishift-tetris {
+      .projects .minishift-tetris {
         background-image: url('images/minishift-tetris.jpg');
         background-color: #8BC34A;
       }
 
-      #projects .double {
+      .projects .double {
         background-image: url('images/double.jpg');
         background-color: #e3705b;
       }
 
-      #projects .sk-innovation {
+      .projects .sk-innovation {
         background-image: url('images/sk-innovation.png');
         background-color: #4CAF50;
       }
 
-      #projects .sk-ios {
+      .projects .sk-ios {
         background-image: url('images/sk-ios.png');
         background-color: #00BCD4;
       }
 
-      #projects .bb10 {
+      .projects .bb10 {
         background-image: url('images/bb10.jpg');
         background-color: #616161;
       }
 
-      #projects .sk-android {
+      .projects .sk-android {
         background-image: url('images/sk-android.png');
         background-color: #0097A7;
       }
 
-      #projects .livingmap {
+      .projects .livingmap {
         background-image: url('images/livingmap.png');
         background-color: #413c6b;
       }
 
-      #projects .iapprove {
+      .projects .iapprove {
         background-image: url('images/iapprove.png');
         background-color: #3F51B5;
       }
 
-      #projects a {
+      .projects a {
         text-decoration: none;
         color: #fff;
       }
 
-      #projects > li > * {
+      .projects > li > * {
         margin-left: 16px;
         margin-right: 16px;
       }
@@ -214,10 +232,10 @@
           align-items: flex-start;
         }
         #content {
-          margin-top: 4em;
+          margin-top: 2em;
           margin-bottom: 4em;
         }
-        #projects {
+        .projects {
           width: 500px;
         }
       }
@@ -253,70 +271,74 @@
       </div>
     </header>
     <div id="content">
-      <ol id="projects">
+      <h3>Career</h3>
+      <ol class="projects" id="career">
         <li>
           <a class="beeline" href="https://beeline.co" target="_blank" rel="noopener noreferrer">
-            <h3>Beeline</h3>
+            <h4>Beeline</h4>
             <span class="description">Simpler navigation for bicycles</span>
           </a>
         </li>
         <li>
-          <a class="emojikey" href="https://chrome.google.com/webstore/detail/emojikey-search-and-type/lnpnkhpkllalfpmkkjmckcmdbncgbdke" target="_blank" rel="noopener noreferrer">
-            <h3>Emojikey</h3>
-            <span class="description">Search and type emojis</span>
-          </a>
-        </li>
-        <li>
           <a class="boopjs" href="https://github.com/chetbox/boopjs" target="_blank" rel="noopener noreferrer">
-            <h3>boop.js</h3>
+            <h4>boop.js</h4>
             <span class="description">UI test automation for Android apps</span>
           </a>
         </li>
         <li>
-          <a class="minishift-tetris" href="https://github.com/chetbox/minishift-tetris" target="_blank" rel="noopener noreferrer">
-            <h3>Minishift Tetris</h3>
-            <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
-          </a>
-        </li>
-        <li>
           <a class="double" href="http://www.joindouble.com/" target="_blank" rel="noopener noreferrer">
-            <h3>Double</h3>
+            <h4>Double</h4>
             <span class="description">Safer, less awkward dating</span>
           </a>
         </li>
         <li>
           <a class="livingmap" href="https://livingmap.com/" target="_blank" rel="noopener noreferrer">
-            <h3>Living Map</h3>
+            <h4>Living Map</h4>
             <span class="description">Smart maps for mobile devices</span>
           </a>
         </li>
         <li>
           <a class="sk sk-innovation" href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/" target="_blank" rel="noopener noreferrer">
-            <h3>SwiftKey innovation days</h3>
+            <h4>SwiftKey innovation days</h4>
             <span class="description">Fostering creative culture at SwiftKey</span>
           </a>
         </li>
         <li>
           <a class="sk sk-ios" href="https://swiftkey.com/en/keyboard/ios" target="_blank" rel="noopener noreferrer">
-            <h3>SwiftKey iOS</h3>
+            <h4>SwiftKey iOS</h4>
             <span class="description">Faster, more accurate typing on iOS</span>
           </a>
         </li>
         <li>
           <a class="sk bb10" href="https://developer.blackberry.com/design/bb10/keyboards.html" target="_blank" rel="noopener noreferrer">
-            <h3>BlackBerry 10 keyboard</h3>
+            <h4>BlackBerry 10 keyboard</h4>
             <span class="description">A new touchscreen typing experience</span>
           </a>
         </li>
         <li>
           <a class="sk sk-android" href="https://swiftkey.com/en" target="_blank" rel="noopener noreferrer">
-            <h3>SwiftKey</h3>
+            <h4>SwiftKey</h4>
             <span class="description">The keyboard powered by you</span>
+          </a>
+        </li>
+      </ol>
+      <h3>Other projects</h3>
+      <ol class="projects" id="other">
+        <li>
+          <a class="emojikey" href="https://chrome.google.com/webstore/detail/emojikey-search-and-type/lnpnkhpkllalfpmkkjmckcmdbncgbdke" target="_blank" rel="noopener noreferrer">
+            <h4>Emojikey</h4>
+            <span class="description">Search and type emojis</span>
+          </a>
+        </li>
+        <li>
+          <a class="minishift-tetris" href="https://github.com/chetbox/minishift-tetris" target="_blank" rel="noopener noreferrer">
+            <h4>Minishift Tetris</h4>
+            <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
           </a>
         </li>
         <li>
           <a class="sk iapprove" href="https://github.com/chetbox/iApprove" target="_blank" rel="noopener noreferrer">
-            <h3>iApprove</h3>
+            <h4>iApprove</h4>
             <span class="description">Audience participation for presentations</span>
           </a>
         </li>
