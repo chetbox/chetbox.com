@@ -24,9 +24,11 @@
       body {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
-        height: 100vh;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       header {
         display: flex;
@@ -66,6 +68,7 @@
         margin-bottom: 0;
         margin-top: 0.5em;
         text-align: left;
+        max-width: 80vw;
       }
       header a {
         text-decoration: none;
@@ -198,18 +201,24 @@
 
       /* large screens */
       @media screen and (min-width: 567px) {
+        body {
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+        }
         header {
           flex-direction: row;
           margin-top: 4em;
-          margin-bottom: 4em;
         }
         header .info {
           align-items: flex-start;
         }
         #content {
-          max-width: 500px;
           margin-top: 4em;
           margin-bottom: 4em;
+        }
+        #projects {
+          width: 500px;
         }
       }
     </style>
@@ -221,7 +230,7 @@
         <h1>Chetan Padia</h1>
         <h2>Software engineer in Brighton, UK</h2>
         <p>
-          I build infrastructure for small teams, apps, and websites.
+          I build infrastructure, apps, and websites in small teams.
           In my spare time I like to climb, cycle, cook, craft, and play <a target="_blank" rel="noopener noreferrer" href="http://www.whatisultimate.com/">Ultimate</a>.
         </p>
         <nav>
