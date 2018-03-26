@@ -40,11 +40,14 @@
         height: 120px;
         border-radius: 60px;
       }
-      header h1 {
+      header h1, h2 {
         font-weight: 100;
-        margin: 0.25em 0;
+        margin: 0;
         color: #333;
         bottom: 0;
+      }
+      header h2 {
+        font-size: 1em;
       }
       header .info {
         display: flex;
@@ -60,14 +63,23 @@
       header p {
         color: #555;
         font-weight: 100;
-        margin-top: 0;
         margin-bottom: 0;
+        margin-top: 0.5em;
+        text-align: left;
+      }
+      header a {
+        text-decoration: none;
+        color: inherit;
+        transition: color 200ms ease;
+        color: #333;
+      }
+      header a:hover {
+        color: #000;
       }
       nav {
         margin: 1em 0;
       }
       nav a {
-        text-decoration: none;
         color: #aaa;
         display: inline-block;
         margin: 0 1em 0 0;
@@ -207,7 +219,11 @@
       <img src="images/chet.jpg" alt="@chetbox">
       <div class="info">
         <h1>Chetan Padia</h1>
-        <p>engineer · entrepreneur · maker of crappy prototypes</p>
+        <h2>Software engineer in Brighton, UK</h2>
+        <p>
+          I build infrastructure for small teams, apps, and websites.
+          In my spare time I like to climb, cycle, cook, craft, and play <a target="_blank" rel="noopener noreferrer" href="http://www.whatisultimate.com/">Ultimate</a>.
+        </p>
         <nav>
           <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
