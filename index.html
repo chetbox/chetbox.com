@@ -148,8 +148,17 @@
         background-image: url('images/translucent.png');
       }
 
-      .projects > li .description {
+      .projects > li .details {
         font-size: 0.8em;
+        display: block;
+        width: 100%;
+      }
+
+      .projects > li .date {
+        opacity: 0.67;
+        margin-left: 1em;
+        margin-right: 1em;
+        float: right;
       }
 
       .projects .beeline {
@@ -177,22 +186,12 @@
         background-color: #e3705b;
       }
 
-      .projects .sk-innovation {
-        background-image: url('images/sk-innovation.png');
-        background-color: #4CAF50;
-      }
-
-      .projects .sk-ios {
-        background-image: url('images/sk-ios.png');
-        background-color: #00BCD4;
-      }
-
       .projects .bb10 {
         background-image: url('images/bb10.jpg');
         background-color: #616161;
       }
 
-      .projects .sk-android {
+      .projects .swiftkey {
         background-image: url('images/sk-android.png');
         background-color: #0097A7;
       }
@@ -291,19 +290,25 @@
         <li>
           <a class="kotlin" href="https://www.slideshare.net/ChetanPadia/why-kotlin-makes-java-null-and-void" target="_blank" rel="noopener noreferrer">
             <h4>Kotlin makes Java null and void</h4>
-            <span class="description">Intro to Kotlin on Android and how to migrate from Java</span>
+            <span class="details">
+              <span class="description">Intro to Kotlin on Android and how to migrate from Java</span>
+            </span>
           </a>
         </li>
         <li>
           <a class="firebase" href="https://www.slideshare.net/ChetanPadia/launching-beeline-with-firebase-80498712" target="_blank" rel="noopener noreferrer">
             <h4>Beeline's backend, built with Firebase</h4>
-            <span class="description">A workflow for Realtime DB, Auth, Cloud Functions, Storage, and more</span>
+            <span class="details">
+              <span class="description">A workflow for Realtime DB, Auth, Cloud Functions, Storage, and more</span>
+            </span>
           </a>
         </li>
         <li>
           <a class="launching-beeline" href="https://www.slideshare.net/ChetanPadia/launching-beeline-geomob-june-2017" target="_blank" rel="noopener noreferrer">
             <h4>Launching Beeline</h4>
-            <span class="description">From Kickstarter to connected product</span>
+            <span class="details">
+              <span class="description">From Kickstarter to connected product</span>
+            </span>
           </a>
         </li>
       </ol>
@@ -312,49 +317,46 @@
         <li>
           <a class="beeline" href="https://beeline.co" target="_blank" rel="noopener noreferrer">
             <h4>Beeline</h4>
-            <span class="description">Simpler navigation for bicycles</span>
+            <span class="details">
+              <span class="date">2016 - 2018</span>
+              <span class="description">Simpler navigation for bicycles</span>
+            </span>
           </a>
         </li>
         <li>
           <a class="boopjs" href="https://github.com/chetbox/boopjs" target="_blank" rel="noopener noreferrer">
             <h4>boop.js</h4>
-            <span class="description">UI test automation for Android apps</span>
+            <span class="details">
+              <span class="date">2015 - 2016</span>
+              <span class="description">UI test automation for Android apps</span>
+            </span>
           </a>
         </li>
         <li>
           <a class="double" href="http://www.joindouble.com/" target="_blank" rel="noopener noreferrer">
             <h4>Double</h4>
-            <span class="description">Safer, less awkward dating</span>
+            <span class="details">
+              <span class="date">2015</span>
+              <span class="description">Safer, less awkward dating</span>
+            </span>
           </a>
         </li>
         <li>
           <a class="livingmap" href="https://livingmap.com/" target="_blank" rel="noopener noreferrer">
             <h4>Living Map</h4>
-            <span class="description">Smart maps for mobile devices</span>
+            <span class="details">
+              <span class="date">2015</span>
+              <span class="description">Smart maps for mobile devices</span>
+            </span>
           </a>
         </li>
         <li>
-          <a class="sk sk-innovation" href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/" target="_blank" rel="noopener noreferrer">
-            <h4>SwiftKey innovation days</h4>
-            <span class="description">Fostering creative culture at SwiftKey</span>
-          </a>
-        </li>
-        <li>
-          <a class="sk sk-ios" href="https://swiftkey.com/en/keyboard/ios" target="_blank" rel="noopener noreferrer">
-            <h4>SwiftKey iOS</h4>
-            <span class="description">Faster, more accurate typing on iOS</span>
-          </a>
-        </li>
-        <li>
-          <a class="sk bb10" href="https://developer.blackberry.com/design/bb10/keyboards.html" target="_blank" rel="noopener noreferrer">
-            <h4>BlackBerry 10 keyboard</h4>
-            <span class="description">A new touchscreen typing experience</span>
-          </a>
-        </li>
-        <li>
-          <a class="sk sk-android" href="https://swiftkey.com/en" target="_blank" rel="noopener noreferrer">
+          <a class="swiftkey" href="https://swiftkey.com/en" target="_blank" rel="noopener noreferrer">
             <h4>SwiftKey</h4>
-            <span class="description">The keyboard powered by you</span>
+            <span class="details">
+              <span class="date">2010 - 2015</span>
+              <span class="description">The keyboard powered by you</span>
+            </span>
           </a>
         </li>
       </ol>
@@ -363,19 +365,25 @@
         <li>
           <a class="emojikey" href="https://chrome.google.com/webstore/detail/emojikey-search-and-type/lnpnkhpkllalfpmkkjmckcmdbncgbdke" target="_blank" rel="noopener noreferrer">
             <h4>Emojikey</h4>
-            <span class="description">Search and type emojis</span>
+            <span class="details">
+              <span class="description">Search and type emojis</span>
+            </span>
           </a>
         </li>
         <li>
           <a class="minishift-tetris" href="https://github.com/chetbox/minishift-tetris" target="_blank" rel="noopener noreferrer">
             <h4>Minishift Tetris</h4>
-            <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
+            <span class="details">
+              <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
+            </span>
           </a>
         </li>
         <li>
           <a class="sk iapprove" href="https://github.com/chetbox/iApprove" target="_blank" rel="noopener noreferrer">
             <h4>iApprove</h4>
-            <span class="description">Audience participation for presentations</span>
+            <span class="details">
+              <span class="description">Audience participation for presentations</span>
+            </span>
           </a>
         </li>
       </ol>
