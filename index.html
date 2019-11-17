@@ -37,8 +37,8 @@
         font-size: 1.1em;
         line-height: 1.1em;
         color: #999;
-        margin-top: 2em;
-        margin-bottom: 0.5em;
+        margin-top: 2.5em;
+        margin-bottom: 1em;
         text-align: center;
       }
       h4 {
@@ -55,51 +55,57 @@
         align-items: center;
       }
       header {
+        width: 100%;
+        background: darksalmon;
+        color: white;
+        padding: 1em 0;
+      }
+      #about-me {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
       }
-      header *, .projects * {
+      #about-me *:not(i), .projects *:not(i) {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
       }
-      header > img {
+      #about-me > img {
         margin: 30px;
         width: 120px;
         height: 120px;
         border-radius: 60px;
       }
-      header h1, header h2, header h3, header h4 {
-        color: #333;
-      }
-      header .info {
+      #about-me .info {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
       }
-      header .info > * {
+      #about-me .info > * {
         padding-left: 16px;
         padding-right: 16px;
       }
-      header p {
-        color: #555;
+      #about-me p {
+        opacity: 0.8;
         font-weight: 100;
         margin-bottom: 0;
         margin-top: 1em;
         text-align: left;
         max-width: 80vw;
       }
-      header a {
+      #about-me .info a {
+        font-weight: 400;
+      }
+      #about-me a {
         text-decoration: none;
         color: inherit;
-        transition: color 200ms ease;
-        color: #333;
+        transition: opacity 200ms;
+        opacity: 0.8;
       }
-      header a:hover {
-        color: #000;
+      #about-me a:hover {
+        opacity: 1;
       }
       nav {
         margin: 1em 0;
@@ -279,18 +285,25 @@
         margin-right: 16px;
       }
 
+      /* small screens */
+      @media screen and (max-width: 566px) {
+        header::after {
+          content: '';
+        }
+      }
+
       /* large screens */
       @media screen and (min-width: 567px) {
-        body {
-          max-width: 500px;
+        header {
+          padding: 2em 0;
+        }
+        #about-me {
           margin-left: auto;
           margin-right: auto;
-        }
-        header {
           flex-direction: row;
-          margin-top: 4em;
+          max-width: 500px;
         }
-        header .info {
+        #about-me .info {
           align-items: flex-start;
         }
         #content {
@@ -305,31 +318,33 @@
   </head>
   <body>
     <header>
-      <img src="images/chetan.png" alt="@chetbox" title="My serious face">
-      <div class="info">
-        <h1>Chetan Padia</h1>
-        <h2>Software engineer in Brighton, UK</h2>
-        <p>
-          I build infrastructure, apps, and websites in small teams.
-          In my spare time I like to climb, cycle, cook, craft, and play <a target="_blank" rel="noopener noreferrer" href="http://www.whatisultimate.com/">Ultimate</a>.
-        </p>
-        <nav>
-          <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/chetbox" title="GitHub">
-            <i class="fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a href="https://medium.com/@chetbox" title="Medium">
-            <i class="fa fa-medium" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/chetbox" title="Twitter">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/chetbox/" title="Instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-        </nav>
+      <div id="about-me">
+        <img src="images/chetan.png" alt="@chetbox" title="My serious face">
+        <div class="info">
+          <h1>Chetan Padia</h1>
+          <h2>Software engineer in Brighton, UK</h2>
+          <p>
+            I build infrastructure, apps, and websites in small teams.
+            In my spare time I like to climb, cycle, cook, craft, and play <a target="_blank" rel="noopener noreferrer" href="http://www.whatisultimate.com/">Ultimate</a>.
+          </p>
+          <nav>
+            <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/chetbox" title="GitHub">
+              <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+            <a href="https://medium.com/@chetbox" title="Medium">
+              <i class="fa fa-medium" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/chetbox" title="Twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/chetbox/" title="Instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </div>
       </div>
     </header>
     <div id="content">
