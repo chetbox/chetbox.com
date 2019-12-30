@@ -45,6 +45,9 @@
         font-size: 1.1em;
         line-height: 1em;
       }
+      a {
+        color: inherit;
+      }
       body {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
@@ -107,7 +110,6 @@
       }
       #about-me a {
         text-decoration: none;
-        color: inherit;
         transition: opacity 200ms;
         opacity: 0.8;
       }
@@ -116,20 +118,25 @@
       }
       nav {
         margin: 1em 0;
+        cursor: default;
       }
       nav a {
-        color: #aaa;
         display: inline-block;
         margin: 0 1em 0 0;
         font-size: 20px;
-        transition: color 200ms ease;
+        opacity: 0.8;
+        transition: opacity 200ms;
       }
       nav a:hover {
-        color: #777;
+        opacity: 1;
       }
 
       i.fa-instagram {
         font-weight: 600;
+      }
+
+      #content > p {
+        text-align: justify;
       }
 
       .projects {
@@ -359,10 +366,10 @@
         }
         #content {
           margin-top: 2em;
-          margin-bottom: 4em;
+          margin-bottom: 2em;
         }
-        .projects {
-          width: 500px;
+        #content > * {
+          max-width: 500px;
         }
       }
     </style>
@@ -399,6 +406,23 @@
       </div>
     </header>
     <div id="content">
+      <p>
+        I'm an experienced software engineer who works on mobile apps, web, serverless, automation, and build systems.
+        I like to work with small or growing teams using solid engineering practices and creativity to improve productivity and job satisfaction.
+        My old boss refers to me as &#8220;safe pair of hands&#8221;.
+      </p>
+      <p>
+        Those that have worked with me know that I believe in &#8220;innovation&#8221; in everything we collectively build. <a target="_blank" rel="noopener noreferrer" href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/">Read more</a>.
+      </p>
+      <p>
+        I aim to coach/teach/mentor at least once a month, usually at <a target="_blank" rel="noopener noreferrer" href="https://codebar.io/brighton">Codebar, Brighton</a>.
+      </p>
+      <p>
+        I currently work with the wonderful folks at <a class="clockwork-dog" href="https://clockwork.dog/" target="_blank" rel="noopener noreferrer">Clockwork Dog</a>, bringing magic to escape rooms.
+      </p>
+      <p id="contact">
+        If you want to work with me, want help or advice feel free to <a href="mailto:hello@chetbox.com">get in touch</a>.
+      </p>
       <h3>Events I run</h3>
       <ol class="projects" id="organiser">
         <li>
@@ -664,6 +688,9 @@
           </a>
         </li>
       </ol>
+      <p style="text-align: center; padding: 1em 0;">
+        Love what you do and the people you do it with.
+      </p>
     </div>
   </body>
   <script>
