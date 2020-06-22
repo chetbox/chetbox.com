@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
-    <title>Chetan Padia</title>
-    <head profile="http://www.w3.org/2005/10/profile">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  <title>Chetan Padia</title>
+
+  <head profile="http://www.w3.org/2005/10/profile">
     <link rel="icon" type="image/jpeg" href="images/chetan.png">
-    <meta name="description" content="Software engineer in Brighton, UK. I build infrastructure, apps, and websites in small teams. In my spare time I like to climb, cycle, cook, craft, and play Ultimate.">
-    <meta name="keywords" content="chetan padia,chet,chetan,entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,mobile engineer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering,prototypes,crappy prototypes.maker of crappy prototypes,beeline,CTO,bike navigation,cycle routing,bicycle navigation,react native,react native developer,cross-platform app,cross-platform app developer,london,brighton">
+    <meta name="description"
+      content="Software engineer in Brighton, UK. I build infrastructure, apps, and websites in small teams. In my spare time I like to climb, cycle, cook, craft, and play Ultimate.">
+    <meta name="keywords"
+      content="chetan padia,chet,chetan,entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,mobile engineer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering,prototypes,crappy prototypes.maker of crappy prototypes,beeline,CTO,bike navigation,cycle routing,bicycle navigation,react native,react native developer,cross-platform app,cross-platform app developer,london,brighton">
     <meta name="author" content="Chetan Padia">
     <meta name="og:url" content="https://chetbox.com" />
     <meta name="og:title" content="Chetan Padia" />
-    <meta name="og:description" content="Software engineer in Brighton, UK. I build infrastructure, apps, and websites in small teams. In my spare time I like to climb, cycle, cook, craft, and play Ultimate." />
+    <meta name="og:description"
+      content="Software engineer in Brighton, UK. I build infrastructure, apps, and websites in small teams. In my spare time I like to climb, cycle, cook, craft, and play Ultimate." />
     <meta name="og:image" content="images/chetan.png" />
     <meta name="og:locale" content="en_GB" />
     <meta property="og:locale:alternate" content="en_US" />
@@ -21,18 +27,24 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,100" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
-      h1, h2, h3, h4 {
+      h1,
+      h2,
+      h3,
+      h4 {
         font-weight: 100;
         margin: 0;
         bottom: 0;
       }
+
       h1 {
         font-size: 2em;
       }
+
       h2 {
         font-size: 1em;
         line-height: 1.2em;
       }
+
       h3 {
         font-size: 1.1em;
         line-height: 1.1em;
@@ -41,13 +53,16 @@
         margin-bottom: 1em;
         text-align: center;
       }
+
       h4 {
         font-size: 1.1em;
         line-height: 1em;
       }
+
       a {
         color: inherit;
       }
+
       body {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
@@ -57,6 +72,7 @@
         flex-direction: column;
         align-items: center;
       }
+
       header {
         width: 100%;
         background: darksalmon;
@@ -64,17 +80,21 @@
         padding: 1em 0;
         box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
       }
+
       #about-me {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
       }
-      #about-me *:not(i), .projects *:not(i) {
+
+      #about-me *:not(i),
+      .projects *:not(i) {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
       }
-      #about-me > img {
+
+      #about-me>img {
         margin: 30px;
         width: 120px;
         height: 120px;
@@ -85,6 +105,7 @@
         align-items: center;
         justify-content: center;
       }
+
       #about-me .info {
         display: flex;
         flex-direction: column;
@@ -92,10 +113,12 @@
         justify-content: center;
         text-align: center;
       }
-      #about-me .info > * {
+
+      #about-me .info>* {
         padding-left: 16px;
         padding-right: 16px;
       }
+
       #about-me p {
         opacity: 0.8;
         font-weight: 100;
@@ -104,22 +127,27 @@
         text-align: left;
         max-width: 80vw;
       }
+
       #about-me .info a {
         font-weight: 400;
         font-display: fallback;
       }
+
       #about-me a {
         text-decoration: none;
         transition: opacity 200ms;
         opacity: 0.8;
       }
+
       #about-me a:hover {
         opacity: 1;
       }
+
       nav {
         margin: 1em 0;
         cursor: default;
       }
+
       nav a {
         display: inline-block;
         margin: 0 1em 0 0;
@@ -127,6 +155,7 @@
         opacity: 0.8;
         transition: opacity 200ms;
       }
+
       nav a:hover {
         opacity: 1;
       }
@@ -135,7 +164,7 @@
         font-weight: 600;
       }
 
-      #content > p {
+      #content>p {
         text-align: justify;
         padding: 0 1.2em;
         box-sizing: border-box;
@@ -153,7 +182,7 @@
         font-display: fallback;
       }
 
-      .projects > li > a {
+      .projects>li>a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -171,13 +200,13 @@
         background-image: url('images/translucent.png');
       }
 
-      .projects > li .details {
+      .projects>li .details {
         font-size: 0.8em;
         display: block;
         width: 100%;
       }
 
-      .projects > li .date {
+      .projects>li .date {
         opacity: 0.67;
         margin-left: 1em;
         margin-right: 1em;
@@ -345,7 +374,7 @@
         color: #fff;
       }
 
-      .projects > li > * {
+      .projects>li>* {
         margin-left: 16px;
         margin-right: 16px;
       }
@@ -362,363 +391,392 @@
         header {
           padding: 2em 0;
         }
+
         #about-me {
           margin-left: auto;
           margin-right: auto;
           flex-direction: row;
           max-width: 500px;
         }
+
         #about-me .info {
           align-items: flex-start;
         }
+
         #content {
           margin-top: 2em;
           margin-bottom: 2em;
         }
-        #content > * {
+
+        #content>* {
           max-width: 500px;
         }
-        #content > p {
+
+        #content>p {
           padding: 0;
         }
       }
     </style>
   </head>
-  <body>
-    <header>
-      <div id="about-me">
-        <img src="images/chetan.png" alt="@chetbox" title="My serious face">
-        <div class="info">
-          <h1>Chetan Padia</h1>
-          <h2>Software engineer in Brighton, UK</h2>
-          <p>
-            I build connected apps, websites, and infrastructure in small teams.
-            In my spare time I like to climb, cycle, cook, craft, and play <a target="_blank" rel="noopener noreferrer" href="http://www.whatisultimate.com/">Ultimate</a>.
-          </p>
-          <nav>
-            <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/chetbox" title="GitHub">
-              <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
-            <a href="https://medium.com/@chetbox" title="Medium">
-              <i class="fa fa-medium" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/chetbox" title="Twitter">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/chetbox/" title="Instagram">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </nav>
-        </div>
+
+<body>
+  <header>
+    <div id="about-me">
+      <img src="images/chetan.png" alt="@chetbox" title="My serious face">
+      <div class="info">
+        <h1>Chetan Padia</h1>
+        <h2>Software engineer in Brighton, UK</h2>
+        <p>
+          I build connected apps, websites, and infrastructure in small teams.
+          In my spare time I like to climb, cycle, cook, craft, and play <a target="_blank" rel="noopener noreferrer"
+            href="http://www.whatisultimate.com/">Ultimate</a>.
+        </p>
+        <nav>
+          <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/chetbox" title="GitHub">
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a href="https://medium.com/@chetbox" title="Medium">
+            <i class="fa fa-medium" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/chetbox" title="Twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/chetbox/" title="Instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </nav>
       </div>
-    </header>
-    <div id="content">
-      <p>
-        I'm an experienced software engineer who works on systems that interact with the real world, with mobile apps, web, serverless, automation.
-        I like to improve productivity and job satisfaction in small or growing teams using solid engineering practices and creativity.
-        My old boss refers to me as &#8220;safe pair of hands&#8221;.
-      </p>
-      <p>
-        Those that have worked with me know that I believe in &#8220;innovation&#8221; in everything we collectively build. <a target="_blank" rel="noopener noreferrer" href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/">Read more</a>.
-      </p>
-      <p>
-        I aim to coach/teach/mentor at least once a month, usually at <a target="_blank" rel="noopener noreferrer" href="https://codebar.io/brighton">Codebar, Brighton</a>.
-      </p>
-      <p>
-        I currently work with the wonderful folks at <a class="clockwork-dog" href="https://clockwork.dog/" target="_blank" rel="noopener noreferrer">Clockwork Dog</a>, bringing magic to escape rooms.
-      </p>
-      <p id="contact">
-        If you want to work with me, want help or advice feel free to <a href="mailto:hello@chetbox.com">get in touch</a>.
-      </p>
-      <h3>Events I run</h3>
-      <ol class="projects" id="organiser">
-        <li>
-          <a class="t-shaped-talks" href="https://tshapedtalks.com" target="_blank" rel="noopener noreferrer">
-            <h4>T-Shaped Talks</h4>
-            <span class="details">
-              <span class="description">A meeting of diverse communities in Brighton &amp; Hove</span>
-            </span>
-          </a>
-        </li>
-      </ol>
-      <h3>Recent talks</h3>
-      <ol class="projects" id="talks">
-        <li>
-          <a class="silicon-brighton-fundraiser" href="https://youtu.be/uW-PyoA4PEY" target="_blank" rel="noopener noreferrer">
-            <h4>The Future of Startups in Brighton &amp; Hove</h4>
-            <span class="details">
-              <span class="description">What's changing and why 2020 is the most exciting time for local startups</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="t-shaped-talks-interview" href="https://youtu.be/Y6-p9eQbXco" target="_blank" rel="noopener noreferrer">
-            <h4>T-Shaped Talks interview</h4>
-            <span class="details">
-              <span class="description">An interview with The People's Republic of Brighton and Hove</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="kotlin" href="https://www.slideshare.net/ChetanPadia/why-kotlin-makes-java-null-and-void" target="_blank" rel="noopener noreferrer">
-            <h4>Kotlin makes Java null and void</h4>
-            <span class="details">
-              <span class="description">Intro to Kotlin on Android and how to migrate from Java</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="firebase" href="https://www.slideshare.net/ChetanPadia/launching-beeline-with-firebase-80498712" target="_blank" rel="noopener noreferrer">
-            <h4>Beeline's backend, built with Firebase</h4>
-            <span class="details">
-              <span class="description">A workflow for Realtime DB, Auth, Cloud Functions, Storage, and more</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="launching-beeline" href="https://www.slideshare.net/ChetanPadia/launching-beeline-geomob-june-2017" target="_blank" rel="noopener noreferrer">
-            <h4>Launching Beeline</h4>
-            <span class="details">
-              <span class="description">From Kickstarter to connected product</span>
-            </span>
-          </a>
-        </li>
-      </ol>
-      <h3>Where I've worked</h3>
-      <ol class="projects" id="career">
-        <li>
-          <a class="clockwork-dog" href="https://clockwork.dog/" target="_blank" rel="noopener noreferrer">
-            <h4>Clockwork Dog</h4>
-            <span class="details">
-              <span class="date">2019 - 2020</span>
-              <span class="description">Dazzling and surprising with tech for escape rooms</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="bbc-ownit" href="https://www.bbc.com/ownit" target="_blank" rel="noopener noreferrer">
-            <h4>BBC Own It</h4>
-            <span class="details">
-              <span class="date">2019</span>
-              <span class="description">Help and advice for young people's first leap online</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="thrive" href="https://thrivewearables.com/" target="_blank" rel="noopener noreferrer">
-            <h4>Thrive</h4>
-            <span class="details">
-              <span class="date">2019</span>
-              <span class="description">Improving life through wearable sensor technology</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="matchbox" href="https://matchboxmobile.com/" target="_blank" rel="noopener noreferrer">
-            <h4>Matchbox Mobile</h4>
-            <span class="details">
-              <span class="date">2018</span>
-              <span class="description">Mobile, cloud, voice, IoT, AI, and more</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="beano" href="https://beano.com/" target="_blank" rel="noopener noreferrer">
-            <h4>Beano</h4>
-            <span class="details">
-              <span class="date">2018</span>
-              <span class="description">Cross-platform content for kids</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="beeline" href="https://beeline.co" target="_blank" rel="noopener noreferrer">
-            <h4>Beeline</h4>
-            <span class="details">
-              <span class="date">2016 - 2018</span>
-              <span class="description">Simpler navigation for bicycles</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="boopjs" href="https://github.com/chetbox/boopjs" target="_blank" rel="noopener noreferrer">
-            <h4>boop.js</h4>
-            <span class="details">
-              <span class="date">2015 - 2016</span>
-              <span class="description">UI test automation for Android apps</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="double" href="http://www.joindouble.com/" target="_blank" rel="noopener noreferrer">
-            <h4>Double</h4>
-            <span class="details">
-              <span class="date">2015</span>
-              <span class="description">Safer, less awkward dating</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="livingmap" href="https://livingmap.com/" target="_blank" rel="noopener noreferrer">
-            <h4>Living Map</h4>
-            <span class="details">
-              <span class="date">2015</span>
-              <span class="description">Smart maps for mobile devices</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="swiftkey" href="https://swiftkey.com/en" target="_blank" rel="noopener noreferrer">
-            <h4>SwiftKey</h4>
-            <span class="details">
-              <span class="date">2010 - 2015</span>
-              <span class="description">The keyboard powered by you</span>
-            </span>
-          </a>
-        </li>
-      </ol>
-      <h3>Open source</h3>
-      <ol class="projects" id="open-source">
-        <li>
-          <a class="node-dmx" href="https://github.com/chetbox/dmx-audio-visualiser" target="_blank" rel="noopener noreferrer">
-            <h4>Node.js DMX</h4>
-            <span class="details">
-              <span class="description">Realtime timings for node-dmx</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="firebase-mock-functions" href="https://www.npmjs.com/package/firebase-mock-functions" target="_blank" rel="noopener noreferrer">
-            <h4>Firebase Mock Functions</h4>
-            <span class="details">
-              <span class="description">A Node.js library for testing Firebase Database triggers offline</span>
-            </span>
-          </a>
-        </li>
-      </ol>
-      <h3>Things I've made</h3>
-      <ol class="projects">
-        <li>
-          <a class="dvd-player" href="https://github.com/chetbox/raspberry-pi-dvd-player" target="_blank" rel="noopener noreferrer">
-            <h4>Raspberry Pi DVD player</h4>
-            <span class="details">
-              <span class="description">A teeny tiny low-power DVD player</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="dmx-audio-visualiser" href="https://github.com/chetbox/dmx-audio-visualiser" target="_blank" rel="noopener noreferrer">
-            <h4>DMX Audio Visualiser</h4>
-            <span class="details">
-              <span class="description">Visualise audio in realtime on LED tape</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="lifx-switch" href="https://github.com/chetbox/lifx-switch" target="_blank" rel="noopener noreferrer">
-            <h4>LIFX Switch</h4>
-            <span class="details">
-              <span class="description">A web-based switch for LIFX lights</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="kaleidoscope" href="https://kaleidoscope.chetbox.com" target="_blank" rel="noopener noreferrer">
-            <h4>Kaleidoscope Roulette</h4>
-            <span class="details">
-              <span class="description">WebRTC "Chatroulette" with reflective patterns</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="place" href="https://place.chetbox.com" target="_blank" rel="noopener noreferrer">
-            <h4>r/place clone</h4>
-            <span class="details">
-              <span class="description">Multiplayer pixel art</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="beeline-rides" href="https://busy.likeab.ee/rides/public/embed/#HzEGvGaQt4W1rWKx3TzIASasrvY2" target="_blank" rel="noopener noreferrer">
-            <h4>My Beeline Rides</h4>
-            <span class="details">
-              <span class="description">Where I've cycled with Beeline</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="wheely-bike" href="https://chetbox.com/wheely-bike/" target="_blank" rel="noopener noreferrer">
-            <h4>Wheely Bike</h4>
-            <span class="details">
-              <span class="description">A little bike that spins around your screen</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="emojikey" href="https://github.com/chetbox/Emojikey" target="_blank" rel="noopener noreferrer">
-            <h4>Emojikey</h4>
-            <span class="details">
-              <span class="description">Search and type emojis in Chrome/Chromium</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="minishift-tetris" href="https://github.com/chetbox/minishift-tetris" target="_blank" rel="noopener noreferrer">
-            <h4>Minishift Tetris</h4>
-            <span class="details">
-              <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="sk iapprove" href="https://github.com/chetbox/iApprove" target="_blank" rel="noopener noreferrer">
-            <h4>iApprove</h4>
-            <span class="details">
-              <span class="description">Audience participation for presentations</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="sk pointy" href="https://github.com/chetbox/pointy" target="_blank" rel="noopener noreferrer">
-            <h4>Pointy</h4>
-            <span class="details">
-              <span class="description">Show where your pointing on-screen during a presentation with a LEAP Motion</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="pys60 patience" href="https://github.com/chetbox/patience-pys60" target="_blank" rel="noopener noreferrer">
-            <h4>Solitaire/Freecell for PyS60</h4>
-            <span class="details">
-              <span class="description">A patience game for Nokia S60 written in Python</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="pys60 easyedit" href="https://github.com/chetbox/easyedit-pys60" target="_blank" rel="noopener noreferrer">
-            <h4>EasyEdit PyS60</h4>
-            <span class="details">
-              <span class="description">A text editor for Nokia S60 written in Python</span>
-            </span>
-          </a>
-        </li>
-      </ol>
-      <p style="text-align: center; padding: 1em 0;">
-        Love what you do and the people you do it with.
-      </p>
     </div>
-  </body>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  </header>
+  <div id="content">
+    <p>
+      I'm an experienced software engineer who works on systems that interact with the real world, with mobile apps,
+      web, serverless, automation.
+      I like to improve productivity and job satisfaction in small or growing teams using solid engineering practices
+      and creativity.
+      My old boss refers to me as &#8220;safe pair of hands&#8221;.
+    </p>
+    <p>
+      Those that have worked with me know that I believe in &#8220;innovation&#8221; in everything we collectively
+      build. <a target="_blank" rel="noopener noreferrer"
+        href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/">Read more</a>.
+    </p>
+    <p>
+      I aim to coach/teach/mentor at least once a month, usually at <a target="_blank" rel="noopener noreferrer"
+        href="https://codebar.io/brighton">Codebar, Brighton</a>.
+    </p>
+    <p>
+      I currently work with the wonderful folks at <a class="clockwork-dog" href="https://clockwork.dog/"
+        target="_blank" rel="noopener noreferrer">Clockwork Dog</a>, bringing magic to escape rooms.
+    </p>
+    <p id="contact">
+      If you want to work with me, want help or advice feel free to <a href="mailto:hello@chetbox.com">get in touch</a>.
+    </p>
+    <h3>Events I run</h3>
+    <ol class="projects" id="organiser">
+      <li>
+        <a class="t-shaped-talks" href="https://tshapedtalks.com" target="_blank" rel="noopener noreferrer">
+          <h4>T-Shaped Talks</h4>
+          <span class="details">
+            <span class="description">A meeting of diverse communities in Brighton &amp; Hove</span>
+          </span>
+        </a>
+      </li>
+    </ol>
+    <h3>Recent talks</h3>
+    <ol class="projects" id="talks">
+      <li>
+        <a class="silicon-brighton-fundraiser" href="https://youtu.be/uW-PyoA4PEY" target="_blank"
+          rel="noopener noreferrer">
+          <h4>The Future of Startups in Brighton &amp; Hove</h4>
+          <span class="details">
+            <span class="description">What's changing and why 2020 is the most exciting time for local startups</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="t-shaped-talks-interview" href="https://youtu.be/Y6-p9eQbXco" target="_blank"
+          rel="noopener noreferrer">
+          <h4>T-Shaped Talks interview</h4>
+          <span class="details">
+            <span class="description">An interview with The People's Republic of Brighton and Hove</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="kotlin" href="https://www.slideshare.net/ChetanPadia/why-kotlin-makes-java-null-and-void"
+          target="_blank" rel="noopener noreferrer">
+          <h4>Kotlin makes Java null and void</h4>
+          <span class="details">
+            <span class="description">Intro to Kotlin on Android and how to migrate from Java</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="firebase" href="https://www.slideshare.net/ChetanPadia/launching-beeline-with-firebase-80498712"
+          target="_blank" rel="noopener noreferrer">
+          <h4>Beeline's backend, built with Firebase</h4>
+          <span class="details">
+            <span class="description">A workflow for Realtime DB, Auth, Cloud Functions, Storage, and more</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="launching-beeline" href="https://www.slideshare.net/ChetanPadia/launching-beeline-geomob-june-2017"
+          target="_blank" rel="noopener noreferrer">
+          <h4>Launching Beeline</h4>
+          <span class="details">
+            <span class="description">From Kickstarter to connected product</span>
+          </span>
+        </a>
+      </li>
+    </ol>
+    <h3>Where I've worked</h3>
+    <ol class="projects" id="career">
+      <li>
+        <a class="clockwork-dog" href="https://clockwork.dog/" target="_blank" rel="noopener noreferrer">
+          <h4>Clockwork Dog</h4>
+          <span class="details">
+            <span class="date">2019 - 2020</span>
+            <span class="description">Dazzling and surprising with tech for escape rooms</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="bbc-ownit" href="https://www.bbc.com/ownit" target="_blank" rel="noopener noreferrer">
+          <h4>BBC Own It</h4>
+          <span class="details">
+            <span class="date">2019</span>
+            <span class="description">Help and advice for young people's first leap online</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="thrive" href="https://thrivewearables.com/" target="_blank" rel="noopener noreferrer">
+          <h4>Thrive</h4>
+          <span class="details">
+            <span class="date">2019</span>
+            <span class="description">Improving life through wearable sensor technology</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="matchbox" href="https://matchboxmobile.com/" target="_blank" rel="noopener noreferrer">
+          <h4>Matchbox Mobile</h4>
+          <span class="details">
+            <span class="date">2018</span>
+            <span class="description">Mobile, cloud, voice, IoT, AI, and more</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="beano" href="https://beano.com/" target="_blank" rel="noopener noreferrer">
+          <h4>Beano</h4>
+          <span class="details">
+            <span class="date">2018</span>
+            <span class="description">Cross-platform content for kids</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="beeline" href="https://beeline.co" target="_blank" rel="noopener noreferrer">
+          <h4>Beeline</h4>
+          <span class="details">
+            <span class="date">2016 - 2018</span>
+            <span class="description">Simpler navigation for bicycles</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="boopjs" href="https://github.com/chetbox/boopjs" target="_blank" rel="noopener noreferrer">
+          <h4>boop.js</h4>
+          <span class="details">
+            <span class="date">2015 - 2016</span>
+            <span class="description">UI test automation for Android apps</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="double" href="http://www.joindouble.com/" target="_blank" rel="noopener noreferrer">
+          <h4>Double</h4>
+          <span class="details">
+            <span class="date">2015</span>
+            <span class="description">Safer, less awkward dating</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="livingmap" href="https://livingmap.com/" target="_blank" rel="noopener noreferrer">
+          <h4>Living Map</h4>
+          <span class="details">
+            <span class="date">2015</span>
+            <span class="description">Smart maps for mobile devices</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="swiftkey" href="https://swiftkey.com/en" target="_blank" rel="noopener noreferrer">
+          <h4>SwiftKey</h4>
+          <span class="details">
+            <span class="date">2010 - 2015</span>
+            <span class="description">The keyboard powered by you</span>
+          </span>
+        </a>
+      </li>
+    </ol>
+    <h3>Open source</h3>
+    <ol class="projects" id="open-source">
+      <li>
+        <a class="node-dmx" href="https://github.com/chetbox/dmx-audio-visualiser" target="_blank"
+          rel="noopener noreferrer">
+          <h4>Node.js DMX</h4>
+          <span class="details">
+            <span class="description">Realtime timings for node-dmx</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="firebase-mock-functions" href="https://www.npmjs.com/package/firebase-mock-functions" target="_blank"
+          rel="noopener noreferrer">
+          <h4>Firebase Mock Functions</h4>
+          <span class="details">
+            <span class="description">A Node.js library for testing Firebase Database triggers offline</span>
+          </span>
+        </a>
+      </li>
+    </ol>
+    <h3>Things I've made</h3>
+    <ol class="projects">
+      <li>
+        <a class="dvd-player" href="https://github.com/chetbox/raspberry-pi-dvd-player" target="_blank"
+          rel="noopener noreferrer">
+          <h4>Raspberry Pi DVD player</h4>
+          <span class="details">
+            <span class="description">A teeny tiny low-power DVD player</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="dmx-audio-visualiser" href="https://github.com/chetbox/dmx-audio-visualiser" target="_blank"
+          rel="noopener noreferrer">
+          <h4>DMX Audio Visualiser</h4>
+          <span class="details">
+            <span class="description">Visualise audio in realtime on LED tape</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="lifx-switch" href="https://github.com/chetbox/lifx-switch" target="_blank" rel="noopener noreferrer">
+          <h4>LIFX Switch</h4>
+          <span class="details">
+            <span class="description">A web-based switch for LIFX lights</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="kaleidoscope" href="https://kaleidoscope.chetbox.com" target="_blank" rel="noopener noreferrer">
+          <h4>Kaleidoscope Roulette</h4>
+          <span class="details">
+            <span class="description">WebRTC "Chatroulette" with reflective patterns</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="place" href="https://place.chetbox.com" target="_blank" rel="noopener noreferrer">
+          <h4>r/place clone</h4>
+          <span class="details">
+            <span class="description">Multiplayer pixel art</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="beeline-rides" href="https://busy.likeab.ee/rides/public/embed/#HzEGvGaQt4W1rWKx3TzIASasrvY2"
+          target="_blank" rel="noopener noreferrer">
+          <h4>My Beeline Rides</h4>
+          <span class="details">
+            <span class="description">Where I've cycled with Beeline</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="wheely-bike" href="https://chetbox.com/wheely-bike/" target="_blank" rel="noopener noreferrer">
+          <h4>Wheely Bike</h4>
+          <span class="details">
+            <span class="description">A little bike that spins around your screen</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="emojikey" href="https://github.com/chetbox/Emojikey" target="_blank" rel="noopener noreferrer">
+          <h4>Emojikey</h4>
+          <span class="details">
+            <span class="description">Search and type emojis in Chrome/Chromium</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="minishift-tetris" href="https://github.com/chetbox/minishift-tetris" target="_blank"
+          rel="noopener noreferrer">
+          <h4>Minishift Tetris</h4>
+          <span class="details">
+            <span class="description">Play Tetris with a Raspberry Pi and Minishift</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="sk iapprove" href="https://github.com/chetbox/iApprove" target="_blank" rel="noopener noreferrer">
+          <h4>iApprove</h4>
+          <span class="details">
+            <span class="description">Audience participation for presentations</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="sk pointy" href="https://github.com/chetbox/pointy" target="_blank" rel="noopener noreferrer">
+          <h4>Pointy</h4>
+          <span class="details">
+            <span class="description">Show where your pointing on-screen during a presentation with a LEAP Motion</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="pys60 patience" href="https://github.com/chetbox/patience-pys60" target="_blank"
+          rel="noopener noreferrer">
+          <h4>Solitaire/Freecell for PyS60</h4>
+          <span class="details">
+            <span class="description">A patience game for Nokia S60 written in Python</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="pys60 easyedit" href="https://github.com/chetbox/easyedit-pys60" target="_blank"
+          rel="noopener noreferrer">
+          <h4>EasyEdit PyS60</h4>
+          <span class="details">
+            <span class="description">A text editor for Nokia S60 written in Python</span>
+          </span>
+        </a>
+      </li>
+    </ol>
+    <p style="text-align: center; padding: 1em 0;">
+      Love what you do and the people you do it with.
+    </p>
+  </div>
+</body>
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-61569356-4', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-61569356-4', 'auto');
+  ga('send', 'pageview');
 
-  </script>
+</script>
+
 </html>
