@@ -10,10 +10,9 @@
 
   <head profile="http://www.w3.org/2005/10/profile">
     <link rel="icon" type="image/jpeg" href="images/chetan.png">
-    <meta name="description"
-      content="Software engineer in Brighton, UK. I build infrastructure, apps, and websites in small teams. In my spare time I like to climb, cycle, cook, craft, and play Ultimate.">
+    <meta name="description" content="Helping businesses spend less on tech. Co-host of the Brighton Startup Podcast.">
     <meta name="keywords"
-      content="chetan padia,chet,chetan,entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,mobile engineer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering,prototypes,crappy prototypes.maker of crappy prototypes,beeline,CTO,bike navigation,cycle routing,bicycle navigation,react native,react native developer,cross-platform app,cross-platform app developer,london,brighton">
+      content="chetan padia,chet,chetan,entrepreneur,software engineer,dev,developer,coder,hacker,programmer,chetan padia,chetbox,boop.js,boopjs.com,automated testing,iOS developer,Android developer,mobile engineer,web developer,London,professional,hackathons,Java,Javascript,HTML,CSS,jQuery,Objective-C,Swift,Clojure,Python,Apple,Google,computer systems and software engineering,prototypes,crappy prototypes.maker of crappy prototypes,beeline,CTO,bike navigation,cycle routing,bicycle navigation,react native,react native developer,cross-platform app,cross-platform app developer,london,brighton, brigthon startup, brigthon startup podcast, freelance, consultant">
     <meta name="author" content="Chetan Padia">
     <meta name="og:url" content="https://chetbox.com" />
     <meta name="og:title" content="Chetan Padia" />
@@ -26,6 +25,8 @@
     <meta name="twitter:creator" content="@chetbox" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,100" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <style>
       h1,
       h2,
@@ -129,17 +130,16 @@
       }
 
       #about-me .info a {
-        font-weight: 400;
+        font-weight: bold;
         font-display: fallback;
       }
 
       #about-me a {
         text-decoration: none;
-        transition: opacity 200ms;
-        opacity: 0.8;
       }
 
       #about-me a:hover {
+        text-decoration: underline;
         opacity: 1;
       }
 
@@ -379,6 +379,19 @@
         margin-right: 16px;
       }
 
+      #contact button {
+        display: block;
+        margin: auto;
+        background: salmon;
+        padding: 0.5em 1em;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 0.8em;
+        cursor: pointer;
+        box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+      }
+
       /* small screens */
       @media screen and (max-width: 566px) {
         header::after {
@@ -427,9 +440,9 @@
         <h1>Chetan Padia</h1>
         <h2>Software engineer in Brighton, UK</h2>
         <p>
-          I build connected apps, websites, and infrastructure in small teams.
-          In my spare time I like to climb, cycle, cook, craft, and play <a target="_blank" rel="noopener noreferrer"
-            href="http://www.whatisultimate.com/">Ultimate</a>.
+          Helping businesses spend less on tech.
+          <br />
+          Co-host of the <a href="https://brightonstartup.com/podcast" target="_blank">Brighton Startup Podcast</a>.
         </p>
         <nav>
           <a href="https://www.linkedin.com/in/chetbox" title="LinkedIn">
@@ -453,27 +466,25 @@
   </header>
   <div id="content">
     <p>
-      I'm an experienced software engineer who works on systems that interact with the real world, with mobile apps,
-      web, serverless, automation.
-      I like to improve productivity and job satisfaction in small or growing teams using solid engineering practices
-      and creativity.
-      My old boss refers to me as &#8220;safe pair of hands&#8221;.
+      I help small teams plan and implement their cloud platforms, choice of programming languages, processes, hardware,
+      and
+      other tools. The right approach can dramatically improve efficiency, communication, and day-to-day happiness
+      across
+      your organisation.
     </p>
     <p>
-      Those that have worked with me know that I believe in &#8220;innovation&#8221; in everything we collectively
-      build. <a target="_blank" rel="noopener noreferrer"
-        href="https://blog.swiftkey.com/innovation-week-5-reasons-to-hold-a-week-long-hack-day/">Read more</a>.
+      <b>I offer free help to leaders in business and tech from under-represented minorities, including those with
+        disabilites, women, LGBTIQA+, and black communities.</b> This approach is heavily inspired by <a
+        href="https://codebar.io" target="_blank">Codebar</a>, where I
+      coach at least once a month.
     </p>
-    <p>
-      I aim to coach/teach/mentor at least once a month, usually at <a target="_blank" rel="noopener noreferrer"
-        href="https://codebar.io/brighton">Codebar, Brighton</a>.
+    <p id="contact">
+      <button href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/chetbox/30min'});return false;">Book
+        a time to say hello</button>
     </p>
     <p>
       I currently work with the wonderful folks at <a class="clockwork-dog" href="https://clockwork.dog/"
         target="_blank" rel="noopener noreferrer">Clockwork Dog</a>, bringing magic to escape rooms.
-    </p>
-    <p id="contact">
-      If you want to work with me, want help or advice feel free to <a href="mailto:hello@chetbox.com">get in touch</a>.
     </p>
     <h3>Events I run</h3>
     <ol class="projects" id="organiser">
