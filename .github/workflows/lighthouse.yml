@@ -6,6 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: treosh/lighthouse-ci-action@v3
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         with:
           configPath: '.lighthouserc.json'
           uploadArtifacts: true
