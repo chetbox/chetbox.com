@@ -1,0 +1,10 @@
+name: Lighthouse
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: treosh/lighthouse-ci-action@v3
+        with:
+          configPath: '.lighthouserc.json'
