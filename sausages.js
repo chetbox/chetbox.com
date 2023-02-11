@@ -11,7 +11,6 @@ function sausages(container) {
   container.style.position = "relative";
 
   for (var child of container.children) {
-    console.log(child);
     child.style.position = "relative";
     child.style.zIndex = child.style.zIndex || "1";
   }
@@ -24,11 +23,11 @@ function sausages(container) {
   var width = canvas.width;
   var height = canvas.height;
 
-  var segments = [];
+  var segments = new Set();
 
   // Create a new segment at the top of the screen
   function newSegment() {
-    segments.push({
+    segments.add({
       x: Math.random() * width,
       y: -50, // Start off screen - ChatGPT initialized this to 0
       scale: 1,
@@ -37,13 +36,15 @@ function sausages(container) {
 
   // Update the position and scale of each segment
   function update() {
-    for (var i = 0; i < segments.length; i++) {
-      var segment = segments[i];
+    for (var segment of segments) {
       segment.y += 2;
       segment.scale += 0.01;
 
-      // FIXME: Remove the segment if it has gone off screen otherwise we have a memory & CPU leak
+      // Remove the segment if it has gone off screen otherwise we have a memory & CPU leak
       // ChatGPT did not do this
+      if (segment.y > height) {
+        segments.delete(segment);
+      }
     }
   }
 
@@ -64,9 +65,7 @@ function sausages(container) {
 
     // Draw the pipes
     ctx.fillStyle = "rgba(255, 255, 255, 0.2)";
-    for (var i = 0; i < segments.length; i++) {
-      var segment = segments[i];
-
+    for (var segment of segments) {
       // Apply a 3D transformation to the pipe
       ctx.save();
       ctx.translate(segment.x - width / 2, segment.y - height / 2);
